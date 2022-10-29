@@ -38,7 +38,7 @@ def reverse_string(str)
   new_str = ""#intializing and empty str
   i = str.length-1 #6 #creating indexes
   while i >=0  do
-    puts new_str<<str[i]
+    new_str<<str[i]
     i-=1
   end
   new_str
