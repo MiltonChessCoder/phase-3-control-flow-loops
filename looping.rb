@@ -1,19 +1,11 @@
 def happy_new_year
   # your code here
-  # i=10
-  # while i==1
-  #   puts "Happy New Year"
-  #   i-=1
-    
-  # end
-  counter = 10 
-  until counter == 0
-    puts "#{counter}"
-    counter -= 1
-    if counter == 0
-      puts "Happy New Year!"
-    end
+  counter = 10
+  until counter ==0
+    puts counter
+    counter -=1
   end
+  puts "Happy New Year!"
 end
 
 # No need to modify this code! Use this to implement the fizzbuzz_printer method.
@@ -31,24 +23,25 @@ end
 
 def fizzbuzz_printer
   # your code here
+  #taking a range of numbers and looping through each number at a time
   (1..100).each do |num|
+  #passing the previous method 
   puts fizzbuzz(num)
   end
+
+
 end
 
 def reverse_string(str)
   # your code here
-  # split the string to individual characters
-  split_str = str.split("")
-  #create an empty array so that later on we can use the push and pop methods.
-  reversed = []
-  # know the size of our string so that we can repeat the push and pop method the same number of times
-  # from the array of split up strings, remove the last element in the array. Then the push method will append this to the reversed array
-  str.size.times { reversed << split_str.pop }
-  reversed.join
-end
-
-
-
-
+  #hello
+  new_str = ""#intializing and empty str
+  i = str.length-1 #6 #creating indexes
+  while i >=0  do
+    puts new_str<<str[i]
+    i-=1
+  end
+  new_str
+end    
+# end
 
